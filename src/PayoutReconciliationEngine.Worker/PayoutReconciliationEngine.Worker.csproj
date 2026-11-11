@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-PayoutReconciliationEngine.Worker-566a2c7f-726a-495e-8651-ca8244e7a85a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PayoutReconciliationEngine.SharedKernel\PayoutReconciliationEngine.SharedKernel.csproj" />
+    <ProjectReference Include="..\Modules\Payouts\Payouts.csproj" />
+    <ProjectReference Include="..\Modules\Ledger\Ledger.csproj" />
+    <ProjectReference Include="..\Modules\Reconciliation\Reconciliation.csproj" />
+  </ItemGroup>
+</Project>
