@@ -18,4 +18,9 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\PayoutReconciliationEngine.SharedKernel\PayoutReconciliationEngine.SharedKernel.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Ledger\Ledger.csproj" />
+  </ItemGroup>
+
 </Project>
